@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CMU.Smartlab.RtspCapture</RootNamespace>
+    <AssemblyName>CMU.Smartlab.RtspCapture</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- <PackageReference Include="Microsoft.Kinect" Version="*" /> -->
+    <!-- <PackageReference Include="Microsoft.Psi.Runtime" Version="0.18.72.1-beta" /> -->
+    <PackageReference Include="Microsoft.Psi.Runtime" Version="*" />
+    <!-- <PackageReference Include="Newtonsoft.Json" Version="12.0.3" /> -->
+    <!-- <PackageReference Include="Microsoft.Psi.Pipeline" Version="*" /> -->
+    <!-- <PackageReference Include="Microsoft.Psi" Version="*" /> -->
+    <PackageReference Include="Newtonsoft.Json" Version="*" />
+    <PackageReference Include="RtspClientSharp" Version="*" />
+    <!-- <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" /> -->
+    <PackageReference Include="System.Data.DataSetExtensions" Version="*" />
+    <!-- <PackageReference Include="System.Drawing.Common" Version="5.0.0-preview.3.20214.6" /> -->
+    <!-- <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.4.355802">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference> -->
+    <PackageReference Include="Apache.NMS.ActiveMQ" Version="1.8.0" />
+    <PackageReference Include="Microsoft.CSharp" Version="*" />
+    <PackageReference Include="System.Net.Http" Version="*" />
+    <!-- <PackageReference Include="System.Data" Version="*" /> -->
+    <!-- <PackageReference Include="System.Xml" Version="*" /> -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- <ProjectReference Include="..\..\..\..\Sources\Audio\Microsoft.Psi.Common" /> -->
+    <!-- <ProjectReference Include="..\..\..\..\Sources\Audio\Microsoft.Psi.Audio.Windows\Microsoft.Psi.Audio.Windows.csproj" /> -->
+    <ProjectReference Include="..\..\..\..\Sources\Runtime\Microsoft.Psi\Microsoft.Psi.csproj" />
+    <ProjectReference Include="..\..\..\..\Sources\Audio\Microsoft.Psi.Audio.Linux\Microsoft.Psi.Audio.Linux.csproj" />
+    <ProjectReference Include="..\..\..\..\Sources\Audio\Microsoft.Psi.Audio\Microsoft.Psi.Audio.csproj" />
+    <ProjectReference Include="..\..\..\..\Sources\Imaging\Microsoft.Psi.Imaging.Linux\Microsoft.Psi.Imaging.Linux.csproj" />
+    <ProjectReference Include="..\..\..\..\Sources\Imaging\Microsoft.Psi.Imaging\Microsoft.Psi.Imaging.csproj" />
+    <ProjectReference Include="..\..\..\..\Sources\Media\Microsoft.Psi.Media.Linux\Microsoft.Psi.Media.Linux.csproj" />
+    <ProjectReference Include="..\..\..\..\Sources\Runtime\Microsoft.Psi.Interop\Microsoft.Psi.Interop.csproj" />
+  </ItemGroup>
+
+  <ItemGroup><!-- <Compile Include="./RtspCapture.cs" /> -->
+    <!-- <Compile Include="RtspDecoder\RawFramesDecoding\AudioConversionParameters.cs" />
+    <Compile Include="RtspDecoder\RawFramesDecoding\DecodedFrames\AudioFrameFormat.cs" />
+    <Compile Include="RtspDecoder\RawFramesDecoding\DecodedFrames\DecodedAudioFrame.cs" />
+    <Compile Include="RtspDecoder\RawFramesDecoding\DecodedFrames\DecodedVideoFrame.cs" />
+    <Compile Include="RtspDecoder\RawFramesDecoding\DecodedFrames\IDecodedAudioFrame.cs" />
+    <Compile Include="RtspDecoder\RawFramesDecoding\DecodedFrames\IDecodedVideoFrame.cs" />
+    <Compile Include="RtspDecoder\RawFramesDecoding\DecodedVideoFrameParameters.cs" />
+    <Compile Include="RtspDecoder\RawFramesDecoding\DecoderException.cs" />
+    <Compile Include="RtspDecoder\RawFramesDecoding\FFmpeg\FFmpegAudioCodecId.cs" />
+    <Compile Include="RtspDecoder\RawFramesDecoding\FFmpeg\FFmpegAudioDecoder.cs" />
+    <Compile Include="RtspDecoder\RawFramesDecoding\FFmpeg\FFmpegAudioPInvoke.cs" />
+    <Compile Include="RtspDecoder\RawFramesDecoding\FFmpeg\FFmpegDecodedVideoScaler.cs" />
+    <Compile Include="RtspDecoder\RawFramesDecoding\FFmpeg\FFmpegVideoDecoder.cs" />
+    <Compile Include="RtspDecoder\RawFramesDecoding\FFmpeg\FFmpegVideoPInvoke.cs" />
+    <Compile Include="RtspDecoder\RawFramesDecoding\PixelFormat.cs" />
+    <Compile Include="RtspDecoder\RawFramesDecoding\ScalingPolicy.cs" />
+    <Compile Include="RtspDecoder\RawFramesDecoding\ScalingQuality.cs" />
+    <Compile Include="RtspDecoder\RawFramesDecoding\TransformParameters.cs" />
+    <Compile Include="RtspDecoder\RawFramesReceiving\IRawFramesSource.cs" />
+    <Compile Include="RtspDecoder\RawFramesReceiving\RawFramesSource.cs" /> -->
+  
+    <ProjectReference Include="..\..\..\..\Sources\Devices\Microsoft.Psi.DeviceManagement\Microsoft.Psi.DeviceManagement.csproj" />
+  </ItemGroup>
+</Project>

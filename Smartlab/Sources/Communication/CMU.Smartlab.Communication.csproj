@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CMU.Smartlab.Communication</RootNamespace>
+    <AssemblyName>CMU.Smartlab.Communication</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="*" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="*" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
+    <PackageReference Include="Apache.NMS.ActiveMQ" Version="2.0.0" />
+    <PackageReference Include="NetMQ" Version="*" />
+    <PackageReference Include="Apache.NMS" Version="2.0.0" />
+    <PackageReference Include="AsyncIO" Version="*" />
+    <PackageReference Include="System.Buffers" Version="*" />
+    <PackageReference Include="System.Memory" Version="*" />
+    <PackageReference Include="System.Numerics.Vectors" Version="*" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="*" />
+    <PackageReference Include="System.ServiceModel" Version="*" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="*" />
+    <PackageReference Include="System.ValueTuple" Version="*" />
+    <PackageReference Include="System.Net.Http" Version="*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Sources\Runtime\Microsoft.Psi\Microsoft.Psi.csproj" />
+    <ProjectReference Include="..\..\..\Sources\Data\Microsoft.Psi.Data\Microsoft.Psi.Data.csproj" />
+    <ProjectReference Include="..\..\..\Sources\Data\Test.Psi.Data\Test.Psi.Data.csproj" />
+    <ProjectReference Include="..\..\..\Sources\Runtime\Microsoft.Psi.Interop\Microsoft.Psi.Interop.csproj" />
+    <ProjectReference Include="..\..\..\Sources\Imaging\Microsoft.Psi.Imaging\Microsoft.Psi.Imaging.csproj" />
+    <ProjectReference Include="..\..\..\Sources\Imaging\Microsoft.Psi.Imaging.Linux\Microsoft.Psi.Imaging.Linux.csproj" />
+    <ProjectReference Include="..\..\..\Sources\Devices\Microsoft.Psi.DeviceManagement\Microsoft.Psi.DeviceManagement.csproj" />
+    <ProjectReference Include="..\..\..\Sources\Common\Test.Psi.Common\Test.Psi.Common.csproj" />
+    <!-- <ProjectReference Include="..\..\..\Sources\Runtime\Test.Psi\Test.Psi.csproj" /> -->
+    <ProjectReference Include="..\..\..\Sources\Media\Microsoft.Psi.Media.Linux\Microsoft.Psi.Media.Linux.csproj" />
+  </ItemGroup>
+</Project>
